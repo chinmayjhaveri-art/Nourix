@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NutriNova</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+🥗 NutriNova
+
+</div>
+
+<button class="darkButton">
+
+🌙
+
+</button>
+
+</header>
+
+<section class="hero">
+
+<h1>Know Your Food.</h1>
+
+<h2>Protect Your Health.</h2>
+
+<p>
+
+Search foods to view nutrition, estimated glucose impact, and healthy eating insights.
+
+</p>
+
+<div class="searchBox">
+
+<input
+id="foodInput"
+type="text"
+placeholder="Search foods like Apple, Rice, Pizza...">
+
+<button onclick="searchFood()">
+
+Search
+
+</button>
+
+</div>
+
+</section>
+
+<section id="result" class="resultCard">
+
+<h2 id="foodName"></h2>
+
+<div class="grid">
+
+<div class="item">
+
+Calories
+
+<span id="calories"></span>
+
+</div>
+
+<div class="item">
+
+Protein
+
+<span id="protein"></span>
+
+</div>
+
+<div class="item">
+
+Carbs
+
+<span id="carbs"></span>
+
+</div>
+
+<div class="item">
+
+Sugar
+
+<span id="sugar"></span>
+
+</div>
+
+<div class="item">
+
+Fiber
+
+<span id="fiber"></span>
+
+</div>
+
+<div class="item">
+
+Health Score
+
+<span id="score"></span>
+
+</div>
+
+</div>
+
+<div class="glucose">
+
+Estimated Glucose Impact
+
+<p id="spike"></p>
+
+</div>
+
+<div class="tip">
+
+💡
+
+<p id="tip"></p>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
